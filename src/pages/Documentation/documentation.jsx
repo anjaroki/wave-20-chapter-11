@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ControlBar, Player } from "video-react";
 import "video-react/dist/video-react.css";
 import { Button } from "reactstrap";
+import PDF from "./pdf";
 
 const sources = {
   sintelTrailer: "https://media.w3.org/2010/05/sintel/trailer.mp4",
@@ -72,6 +73,9 @@ export default function Documentation() {
         <Button onClick={() => setSource(sources.test)} className="mr-3">
           Test Movie
         </Button>
+      </div>
+      <div>
+        <PDF />
       </div>
     </div>
   );
