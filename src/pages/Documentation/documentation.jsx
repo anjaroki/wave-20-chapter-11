@@ -29,6 +29,7 @@ export default function Documentation() {
 
   return (
     <div>
+      <h1>Strategi Permainan</h1>
       <Player
         ref={(player) => {
           setPlayer(player);
